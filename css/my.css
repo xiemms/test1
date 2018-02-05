@@ -1,0 +1,239 @@
+.my_header{
+    position: relative;
+    background:#d34201 url('../img/header.jpg') no-repeat top center;
+    background-size: cover;
+    color: #fff;
+    height: 4.5rem;
+}
+.my_header .editor{
+
+}
+.my_header .setting{
+    
+}
+
+.my_header .user{
+    position: relative;
+    height: 60px;
+    padding: 10px 0 10px 100px;
+    align-items:center;
+    display: flex
+}
+.my_header  .user > img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px  solid #ccc
+}   
+.my_header .user dl{
+    flex: 1;
+    height: 40px;
+    font-size: 14px;
+}
+
+.my_header .operation{
+    margin-right: 10px;
+}
+.my_header .operation a{
+    font-size: 26px;
+}
+
+.my_header .accounts{
+    display: -webkit-flex;
+    display: flex;
+    height: 50px;
+    padding: 4px 20px;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    /* background: rgba(255,255,255,0.5); */
+}
+.my_header .accounts li{
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    border-right: 1px solid #fff;
+}
+.my_header .accounts li:last-child{
+    border-right:0;
+}
+.my_header .accounts li p{ 
+    color: #fff
+}
+
+.my_order {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 86%;
+    box-sizing: border-box;
+    margin-left: 50%;
+    margin-top: 5px;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+.my_order .iconfont::before {
+    margin-right: 5px;
+}
+.my_order h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.my_order .icon-wodedingdan::before{
+    color: #e28d55
+}
+.order_header{
+    display: flex;
+}
+.order_header h3{
+    flex: 1;
+}
+.my_order .more_order{
+    font-size: 12px;
+    color: #999;
+    margin-top: -2px;
+}
+.more_order  .iconfont{
+    font-size: 14px
+}
+.myorder_list {
+    display: flex;
+    margin-top: 6px
+}
+.myorder_list li {
+    flex: 1;
+    width: 22%;
+    text-align: center;
+    justify-content: space-between;
+}
+.myorder_list li p{
+    font-size: 13px;
+}
+.myorder_list .iconfont{
+    font-size: 30px;
+    position: relative
+}
+.num_icon{
+    height: 16px;
+    padding: 0 5px;
+    display: inline-block;
+    background-color: #f00;
+    color: #fff;
+    font-size: 11px;
+    line-height: 17px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: 6px;
+    font-style: normal
+}
+
+.content{
+    margin-top: 100px;
+}
+.list_items {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #f5f0f073;
+    margin-top: 20px; 
+}
+.content .list_items:first-child {
+    margin-top: 0
+}
+.listmenus{
+    display: flex
+}
+.list_items li{
+    flex: 1;
+    width: 25%;
+    text-align: center;
+    justify-content: space-between;
+}
+.list_items .iconfont{
+    font-size: 15px;
+}
+.list_items .icon-document:before{
+    color: #e28d55;
+    margin-right: 3px;
+}
+ 
+.list_header{
+    font-size: 15px;
+}
+.list_header span{
+    font-size: 11px;
+    color: #f00;
+    margin-left: 5px;
+    font-weight: bold
+}
+
+.listmenus .iconfont {
+    font-size: 30px;
+    position: relative
+}
+.listmenus p{
+    font-size: 13px;
+    line-height: 1;
+    margin-top: -4px;
+}
+
+.bottom_items {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    flex-flow: row wrap;
+}
+.bottom_items li{
+    text-align: center;
+    width: 50%;
+}
+.bottom_items li .iconfont{
+    font-size: 30px;
+    color: #f60;
+}
+.bottom_items li span{
+    font-size: 15px;
+}
+
+.fixed_items{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    background: #e44747
+}
+.fixed_items .actives{
+    background: #ec8787
+}
+.fixed_items ul{
+    display: flex;
+}
+    
+.fixed_items ul li{
+    flex: 1;
+    height: 50px;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+   
+}
+.fixed_items ul li a{
+    color: #fff;
+}
+.fixed_items ul li i{
+    margin-top: 4px;
+}

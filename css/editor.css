@@ -1,0 +1,64 @@
+.editor_header{
+    background:#d34201 url('../img/editor_bg.png') no-repeat top center;
+    background-size: cover;
+    height: 3.5rem;
+    position: relative
+}
+.editor_header img{
+    width: 86px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -44px;
+    margin-left: -44px;
+}
+.content {
+    margin: 10px auto;
+    padding: 0 10px
+}
+.content li{
+    height: 45px;
+    line-height: 45px;
+    position: relative
+}
+.content label{
+    font-size: 14px;
+    display: inline-block;
+    width: 84px;
+    text-align: right;
+}
+.content li span{
+    position: absolute;
+    left: 85px;
+    right: 10px;
+
+}
+.content li input{
+    height: 30px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #eee;
+    background-color: #f6f6f6;
+    border-radius: 2px;   
+    font-size: 14px;
+    text-indent: .5em;
+    color: #333;
+    display: inline-block
+}
+
+.content .sub{
+    height: 40px;
+    width: 50%;
+    background-color: #5fd0d4;
+    font-size: 17px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    border: none;
+    margin: 20px auto;
+    border-radius: 20px;
+    outline: 0;
+}
