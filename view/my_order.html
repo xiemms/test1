@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="header">
-        <a href="javascript:void()" class="page_back"></a>
+        <a href="javascript:;" class="page_back"></a>
         <h3>我的订单</h3>
     </div>
     <div class="order_content">
@@ -107,12 +107,12 @@
     </div>
     <script src="../js/zepto.js"></script>
     <script>
-        var siftC = $('.sift_content');
+       
         
-        $('<style>.sift_content{height:'+siftC.height() + 'px;}</style>').appendTo($('head'))
         $('.sift_action').on('click',function(){
-            siftC.toggleClass('sift_hidden')
-            $(this).toggleClass('close')
+            var $this = $(this);
+            $this.parent().children('.sift_content').toggleClass('sift_hidden')
+            $this.toggleClass('close')
         })
     </script>
 </body>

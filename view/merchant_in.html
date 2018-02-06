@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <script src="../js/flexible.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>商户入驻</title>
+        <link href="../css/common.css" type="text/css" rel="stylesheet" />
+        <link href="../css/merchant_in.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="../icon/iconfont.css"  />
+</head>
+<body>
+    <div class="header">
+        <a href="javascript:;" class="page_back"></a>
+        <h3>商户入驻</h3>
+    </div>
+    <div class="mcin_content">
+        <form action="">
+            <ul class="mcin_list"> 
+                <li class="mcin_item">
+                    <label for="">请选择：</label>
+                    <div class="ritem">
+                        <a href="javascript:;" data-price="49" class="price">49元</a>
+                        <a href="javascript:;" data-price="99" class="price">99元</a>
+                        <a href="javascript:;" data-price="199" class="price">199元</a>
+                        <a href="javascript:;" data-price="299" class="price">299元</a>
+                        <input type="hidden" id="m_price" name="price">
+                    </div>
+                </li>
+                <li class="mcin_item">
+                    <label for="">商户名称：</label>
+                    <div class="ritem">
+                        <input type="text" />
+                    </div>
+                </li>
+                <li class="mcin_item">
+                    <label for="">支付宝：</label>
+                    <div class="ritem"><input type="text" placeholder="商户支付宝帐号" /></div>
+                </li>
+                <li class="mcin_item">
+                    <label for="">每日限制：	</label>
+                    <div class="ritem"><input type="text" placeholder="每日可刷码次数" /></div>
+                </li>
+                <li class="mcin_item">
+                    <label for="">每日限额：</label>
+                    <div class="ritem"><input type="text" placeholder="每日可刷现金" /></div>
+                </li>
+                <li >
+                    <a href="#" class="sub">立即提交</a>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <script src="../js/zepto.js"></script>
+    <script>
+        var priceCon = $('.mcin_item .price').on('click',function(){
+            priceCon.removeClass('active');
+            $('#m_price').val($(this).addClass('active').data('price'))
+
+        })
+    </script>
+</body>
+</html>

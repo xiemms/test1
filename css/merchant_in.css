@@ -1,0 +1,60 @@
+.mcin_content {
+    margin: 10px auto;
+    max-width: 680px; 
+}
+.mcin_list {
+    padding: 0 10px;
+}
+.mcin_list .mcin_item{
+    line-height: 45px;
+    position: relative;
+    font-size: 13px;
+}
+.mcin_list .mcin_item label{
+    width: 70px;
+    display: inline-block;
+    text-align: right;
+}
+.mcin_item .ritem {
+    position: absolute;
+    display: flex;
+    left: 80px;
+    top: 7px;
+    right: 10px;
+    height: 31px;
+    line-height: 31px;
+}
+.mcin_item .ritem .price{
+    flex: 1;
+    margin: 0 4px;
+    text-align: center;
+    background: #eee;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.mcin_item .ritem .price.active{
+    background: #46d264;
+    color: #fff;
+}
+.mcin_item input{
+    width: 100%;
+    outline: 0;
+    border: 1px solid #eee;
+    background: #f6f6f6;
+    border-radius: 5px;
+    text-indent: 1em
+}
+ 
+.mcin_list .sub{
+    width: 200px;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 15px;
+    background: #46d264;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: block
+}
