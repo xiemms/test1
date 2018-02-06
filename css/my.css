@@ -84,9 +84,7 @@
     color: #333;
 }
 
-.my_order .icon-wodedingdan::before{
-    color: #e28d55
-}
+
 .order_header{
     display: flex;
 }
@@ -118,6 +116,8 @@
     font-size: 30px;
     position: relative
 }
+.myorder_list .icon-wodedingdan{color:#db1fdc }
+.myorder_list .icon-erweima{color: #16bb2c }
 .num_icon{
     height: 16px;
     padding: 0 5px;
@@ -224,33 +224,3 @@
     font-size: 15px;
 }
 
-.fixed_items{
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    left: 0;
-    bottom: 0;
-    background: #e44747
-}
-.fixed_items .actives{
-    background: #ec8787
-}
-.fixed_items ul{
-    display: flex;
-}
-    
-.fixed_items ul li{
-    flex: 1;
-    height: 50px;
-    line-height: 20px;
-    font-size: 15px;
-    text-align: center;
-    padding-top: 5px;
-   
-}
-.fixed_items ul li a{
-    color: #fff;
-}
-.fixed_items ul li i{
-    margin-top: 4px;
-}
