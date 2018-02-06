@@ -117,3 +117,42 @@ a {
     text-overflow: ellipsis;
     box-sizing: border-box;
 }
+
+.page{
+    width: 100%;
+    position: relative;
+    margin: 10px auto;
+    text-align: center
+}
+.page a{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    margin: 0 3px 6px;
+    background: #fff;
+    padding: 2px 12px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.page .page_active{
+    background: #88929a;
+    color: #fff
+}
+
+.no_result{
+    margin: 10px auto;
+}
+.no_result img{
+    width: 50%;
+    display: block;
+    margin: 0 auto
+}
+.no_result p{
+    line-height: 30px;
+    font-size: 16px;
+    color: #706060;
+    text-align: center
+}

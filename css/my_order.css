@@ -1,0 +1,132 @@
+html,body{
+    height: 100%;
+    background: #f0f0f0;
+}
+.order_content{
+    margin: 10px auto;
+}
+.order_content .sift{
+    background: #fff;
+}
+.sift_content{
+    padding: 10px 0;
+    transition: all 0.8s ;
+}
+body .sift_hidden{
+    height: 0;
+    padding: 0;
+    overflow: hidden
+}
+.sift_content input{
+    outline: 0;
+}
+.sift_content li{
+    line-height: 40px;
+    height: 40px;
+    position: relative
+}
+.sift_content label{
+    width: 70px;
+    text-align: right;
+    font-size: 12px;
+    display: inline-block
+}
+.sift_content .date_input{
+    position: absolute;
+    left: 80px;
+    top: 0;
+    right: 0;
+}
+.sift_content .date_input input{
+    display: inline-block;
+    width: 40%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 10px;
+    background: rgba(238, 238, 238,0.3);
+}
+.sift_content .input_con{
+    position: absolute;
+    left: 80px;
+    right: 0px;
+    top:  5px;
+}
+.sift_content li .input_con > input ,.sift_content li .input_con > select{
+    width: 85%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 10px;
+    background: rgba(238, 238, 238,0.3);
+}
+
+.sift_content .search_sift {
+    width: 200px;
+    display: block;
+    margin: 20px auto 0;
+    background: #ff8111;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+}
+.sift .sift_action{
+    text-align: center
+}
+.sift_action  i{
+    font-size: 16px;
+    font-style: normal;
+}
+.sift_action i::after{
+    content: '收起'
+}
+.sift_action.close i::after {
+    content: '展开'
+}
+
+.list_item{
+    margin: 10px auto;
+    padding:10px;
+    background: #fff;
+}
+.order_tips {
+    line-height: 35px;
+}
+.order_tips span{
+    margin-right: 20px;
+    font-size: 13px;
+}
+.order_tips span i{
+    color: #f00;
+    font-style:normal
+}
+
+.list_info tr,.list_info th,list_info td{
+    padding: 0;
+    margin: 0;
+}
+.list_info{
+    width: 100%;
+}
+.list_info th{
+    background-color: #eee;
+    border: 1px solid #eee;
+    padding: 8px 2px;
+    line-height: 18px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+}
+.list_info td {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 7px 2px;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+}
+.page{
+    margin:  10px auto;
+}
