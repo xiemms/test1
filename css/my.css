@@ -3,7 +3,7 @@
     background:#d34201 url('../img/header.jpg') no-repeat top center;
     background-size: cover;
     color: #fff;
-    height: 4.5rem;
+    height: 168px;
 }
 .my_header .editor{
 
@@ -11,7 +11,6 @@
 .my_header .setting{
     
 }
-
 .my_header .user{
     position: relative;
     height: 60px;
@@ -169,15 +168,24 @@
 }
  
 .list_header{
-    font-size: 15px;
+    line-height: 46px;
+    display: flex;
 }
-.list_header span{
+.list_header div{
+    line-height: 14px;
+    flex: 1;
+    padding-left: 5px;
+}
+.list_header p{
     font-size: 11px;
     color: #f00;
     margin-left: 5px;
     font-weight: bold
 }
-
+.list_header  .editor_order {
+    font-size: 13px;
+    font-weight: normal;
+}
 .listmenus .iconfont {
     font-size: 30px;
     position: relative
