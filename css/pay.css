@@ -1,0 +1,170 @@
+body{
+    background: #edf0f5;
+}
+body a{
+    text-decoration: none
+}
+.content_c {
+    width: 100%;
+    margin: 15px  auto;
+}
+
+
+.content_c .desc {
+    padding: 0 0 10px;
+}
+.content_c .desc  p{
+    background: #fff;
+    /* border: 1px solid #ccc; */
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    /* border-radius: 10px; */
+    font-size: 16px;
+}
+
+.pay_list{
+    padding: 10px 10px 0;
+    background: #fff;
+}
+.pay_list h3{
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding: 4px 0;
+}
+.pay_list li{
+    position: relative;
+    
+    line-height: 45px;
+}
+.pay_list li a{text-decoration: none}
+.pay_list li p{
+    font-size: 16px;
+    padding-left: 42px;
+    position: relative;
+}
+.pay_list li p span{
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+.pay_list li:last-child  p span{
+    border-bottom: none;
+}
+.pay_list li .iconfont{
+    font-size: 28px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    padding: 2px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 8px;
+    color: #fff;
+    
+}
+.pay_list li .icon-31huabei{
+    background: #00c700;
+}
+.pay_list li .icon-jiage{
+    background: #00aaee;
+    top: 6px;
+}
+.pay_list li .icon-xinyongqiafenqi{
+    background: #ff9f20;
+    top: 5px;
+}
+
+.enter-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -4px;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.complaint{
+    margin: 25px auto;
+    background: #fff;
+    line-height: 35px;
+    position: relative;
+    padding-left: 35px;
+    font-weight: 200;
+}
+.complaint i{
+    position: absolute;
+    font-size: 30px;
+    left: 5px;
+    top: 1px;
+    color: #f60;
+}
+
+/* pay2 */
+
+.enter_price {
+    margin: 15px auto;
+    width: 100%;
+    background: #fff;
+
+}
+.enter_price dl{
+    padding: 0 10px 0 20px;
+}
+.enter_price dt{
+    text-align: center;
+    font-size: 15px;
+    line-height: 35px;
+}
+.enter_price .price_item{
+    height: 50px;
+    border-bottom: 1px solid #eee;
+}
+.enter_price .price_item label{
+    font-size: 30px;
+    color: #f00;
+}
+.enter_price .price_item input{
+    border: 0;
+    margin-left: 4px;
+    outline: 0
+}
+.enter_price .dest_item{
+    font-size: 12px;
+    line-height: 28px;
+    color: #aaa
+}
+
+.paylist2 {
+    padding-top: 5px;
+}
+.paylist2 h3{
+    padding: 9px 0;
+}
+.pay_list .change_pay {
+    font-size: 13px;
+    font-weight: normal;
+    float: right;
+    margin-right: 5px;
+    background: #00c700;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.sub_pay{
+    margin: 30px auto;
+    display: block;
+    width: 160px;
+    background: #00c700;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 15px;
+}
