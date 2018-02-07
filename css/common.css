@@ -182,6 +182,7 @@ a {
 }
 .fixed_items ul li a{
     color: #666;
+    text-decoration: none;
 }
 .fixed_items ul .actives a{
     color: #09bb07
