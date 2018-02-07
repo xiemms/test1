@@ -123,11 +123,16 @@ body .sift_hidden{
 }
 .list_info td {
     background-color: #fff;
-    border: 1px solid #eee;
+    border-bottom:1px dashed #ddd;
     padding: 7px 2px;
     line-height: 18px;
     font-size: 12px;
     text-align: center;
+    border-left: 0;
+    border-right: 0;
+}
+.list_info tr:nth-child(2n+1) td{
+    /* background: oldlace */
 }
 .page{
     margin:  10px auto;
