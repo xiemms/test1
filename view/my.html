@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人中心</title>
     <link href="../css/common.css" type="text/css" rel="stylesheet" />
+    <link href="../css/dialog.css" type="text/css" rel="stylesheet" />
     <link href="../css/my.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="../icon/iconfont.css"  />
 </head>
@@ -48,9 +49,12 @@
                     </a>
                 </li>
             </ul>
+            
+        </div>
+        <div class="content">
             <div class="my_order">
                 <div class="order_header">
-                    <h3 class="iconfont icon-wodedingdan">我的订单</h3>
+                    <h3 class="">我的订单</h3>
                     <a href="#" class="more_order ">查看更多订单<i class="iconfont icon-enter"></i></a>
                 </div>
                 <ul class="myorder_list">
@@ -85,36 +89,30 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="content">
             <div class="list_items">
-                <h3 class="list_header iconfont icon-document">自动回款订单
+                <h3 class="list_header ">自动回款订单 <span class="auto_order_rate iconfont icon-feedback" >费率</span>
                 </h3>
-                <div class="title_mes">
-                    <span>小额口碑费率[2.0]</span>
-                    <span>大额分期费率[3.0]</span>
-                    <span>信用POS费率[0.8]</span>
-                </div>
+                <!--  -->
                 <ul class="listmenus">
-                    <li>
+                    <li class="cn_pay">
                         <a href="#">
                             <i class="iconfont icon-pay"><i class="num_icon">2</i></i>
-                            <p>代付款</p>
+                            <p>待付款</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="cn_send">
                         <a href="#">
                             <i class="iconfont icon-send"></i>
                             <p>已付款</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="cn_wddd">
                         <a href="#">
                             <i class="iconfont icon-wodedingdan"></i>
                             <p>全部订单</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="cn_codes">
                         <a href="#">
                             <i class="iconfont icon-erweima"></i>
                             <p>收款码</p>
@@ -123,34 +121,31 @@
                 </ul>
             </div>
              <div class="list_items">
-                <h3 class="list_header iconfont icon-document">话费油卡订单
+                <h3 class="list_header">话费油卡订单
+                        <span class="phone_order_rate iconfont icon-feedback" >费率</span>
                     <a href="#" class="editor_order ">修改<i class="iconfont icon-enter"></i></a>
                 </h3>
-                <div class="title_mes">
-                    <span>小额口碑费率[2.0]</span>
-                    <span>大额分期费率[3.0]</span>
-                    <span>信用POS费率[0.8]</span>
-                </div>
+           
                 <ul class="listmenus">
-                    <li>
+                    <li class="cn_pay">
                         <a href="#">
                             <i class="iconfont icon-pay"><i class="num_icon">2</i></i>
                             <p>待付款</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="cn_send">
                         <a href="#">
                             <i class="iconfont icon-send"></i>
                             <p>已付款</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="cn_wddd">
                         <a href="#">
                             <i class="iconfont icon-wodedingdan"></i>
                             <p>全部订单</p>
                         </a>
                     </li>
-                    <li>
+                    <li  class="cn_codes">
                         <a href="#">
                             <i class="iconfont icon-barcode"></i>
                             <p>邀请码</p>
@@ -162,25 +157,25 @@
                 <li>
                     <a href="#">
                         <i class="iconfont icon-cangkucangchu-xianxing "></i>
-                        <span>我的商户</span>
+                        <p>我的商户</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <i class="iconfont icon-zhongzhuanzhan-xianxing"></i>
-                        <span>商户入驻</span>
+                        <p>商户入驻</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <i class="iconfont icon-manage"></i>
-                        <span>全部商户</span>
+                        <p>全部商户</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <i class="iconfont icon-group"></i>
-                        <span>团队成员</span>
+                        <p>团队成员</p>
                     </a>
                 </li>
             </ul>
@@ -212,5 +207,43 @@
         
     </div>
     <script src="../js/zepto.js"></script>
+    <script src="../js/dialog.js"></script>
+    <script>
+        
+        function showDialog(context){
+            var dias = $.dialog({
+                autoOpen: true,
+                closeBtn: false,
+                width:200,
+                maskClick:function(){
+                    setTimeout(function(){
+                        dias.close()
+                    },10)
+                },
+                afterClose:function(){
+                    setTimeout(function(){
+                        dias.close()
+                    },10)
+                },
+                content: context
+            });
+        }
+
+        $('.auto_order_rate').on('click',function(){
+            showDialog('<div style="font-size:14px;line-height:26px;color:#e44747">\
+                    <p>小额口碑费率[2.0]</p>\
+                    <p>大额分期费率[3.0]</p>\
+                    <p>信用POS费率[0.8]</p>\
+                </div>')
+        })
+
+        $('.phone_order_rate').on('click',function(){
+            showDialog('<div style="font-size:14px;line-height:26px;color:#e44747">\
+                    <p>小额口碑费率[2.0]</p>\
+                    <p>大额分期费率[3.0]</p>\
+                    <p>信用POS费率[0.8]</p>\
+                </div>')
+        })
+    </script>
 </body>
 </html>

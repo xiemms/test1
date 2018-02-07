@@ -164,11 +164,9 @@ a {
     height: 50px;
     left: 0;
     bottom: 0;
-    background: #e44747
+    background: #fafafa
 }
-.fixed_items .actives{
-    background: #ec8787
-}
+
 .fixed_items ul{
     display: flex;
 }
@@ -183,7 +181,10 @@ a {
    
 }
 .fixed_items ul li a{
-    color: #fff;
+    color: #666;
+}
+.fixed_items ul .actives a{
+    color: #09bb07
 }
 .fixed_items ul li i{
     margin-top: 4px;

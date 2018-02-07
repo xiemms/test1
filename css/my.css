@@ -1,16 +1,18 @@
+body{
+    background: #f0f0f0;
+}
 .my_header{
     position: relative;
-    background:#d34201 url('../img/header.jpg') no-repeat top center;
-    background-size: cover;
+    background: url('../img/tb_bg.png') ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     color: #fff;
-    height: 168px;
+    height: 130px;
 }
-.my_header .editor{
+.my_header .editor,.my_header .setting{
+    color: #fff;
+}
 
-}
-.my_header .setting{
-    
-}
 .my_header .user{
     position: relative;
     height: 60px;
@@ -66,14 +68,14 @@
 
 .my_order {
     background: #fff;
-    border-radius: 10px;
     padding: 10px;
-    width: 86%;
+    width: 100%;
     box-sizing: border-box;
-    margin-left: 50%;
+    /* border-radius: 10px; */
+    /* margin-left: 50%;
     margin-top: 5px;
     transform: translateX(-50%);
-    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,.2); */
 }
 .my_order .iconfont::before {
     margin-right: 5px;
@@ -116,8 +118,14 @@
     font-size: 30px;
     position: relative
 }
-.myorder_list .icon-wodedingdan{color:#db1fdc }
-.myorder_list .icon-erweima{color: #16bb2c }
+.myorder_list .icon-pay{
+    color: #95ec84;
+}
+.myorder_list .icon-send{
+    color: #39cbfe;
+}
+.myorder_list .icon-wodedingdan{color:#94c9f4 }
+.myorder_list .icon-erweima{color: #ec6775 }
 .num_icon{
     height: 16px;
     padding: 0 5px;
@@ -136,29 +144,47 @@
 }
 
 .content{
-    margin-top: 100px;
+    margin-top: 15px;
 }
 .list_items {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 5px 10px 10px;
     box-sizing: border-box;
-    border-radius: 10px;
-    background: #f5f0f073;
-    margin-top: 20px; 
+    /* border-radius: 10px; */
+    background: #fff;
+    margin-top: 10px; 
 }
 .content .list_items:first-child {
     margin-top: 0
 }
 .listmenus{
-    display: flex
+    display: flex;
+    width: 100%;
 }
 .list_items li{
     flex: 1;
     width: 25%;
     text-align: center;
     justify-content: space-between;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-right: 6px;
 }
+.list_items li a{color: #fff;}
+.list_items .cn_pay{
+    background: #78db78
+}
+.list_items .cn_send{
+    background: #f5bf5a
+}
+.list_items .cn_wddd{
+    background: #75d3ff
+}
+.list_items .cn_codes{
+    background: #98cdf4
+}
+
 .list_items .iconfont{
     font-size: 15px;
 }
@@ -169,13 +195,26 @@
  
 .list_header{
     line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.icon-feedback::before{display: none}
+.icon-feedback:after { content: "\e6fa"; }
+.list_header .iconfont{
+    margin-left: 10px;
+    font-size: 13px;
+    color: #999;
+    font-weight: normal;
+    line-height: 31px;
+    display: inline-block;
 }
 /* .list_header div{
     line-height: 14px;
     flex: 1;
     padding-left: 5px;
 } */
-.list_items .title_mes{
+/* .list_items .title_mes{
     color: #f00;
     font-size: 11px;
     margin-left: 5px;
@@ -184,7 +223,7 @@
 }
 .list_items .title_mes span{
     margin-right: 10px;
-}
+} */
 /* .list_header p{
     font-size: 11px;
     color: #f00;
@@ -207,18 +246,21 @@
 
 .bottom_items {
     display: flex;
-    width: 90%;
-    margin: 20px auto;
-    padding: 10px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px 0 10px;
     flex-flow: row wrap;
+    background: #fff;
 }
 .bottom_items li{
     text-align: center;
-    width: 50%;
+    flex: 1;
+    font-size: 14px;
+    margin-right: 10px;
 }
 .bottom_items li .iconfont{
     font-size: 30px;
-    color: #f60;
+    color: #c6ccd3;
 }
 .bottom_items li span{
     font-size: 15px;
