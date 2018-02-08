@@ -18,37 +18,39 @@
     </div>
     <div class="order_content">
         <div class="sift">
+            <h3>订单搜索</h3>
             <ul class="sift_content ">
-                <li>
-                    <label for="">查询时间：</label>
+                <li class="search_panel">
                     <div class="date_input">
-                        <input type="date" />
-                         - 
+                        <p>开始时间</p>
+                       <input type="date">
+                    </div>
+                    <span>至</span>
+                    <div class="date_input">
+                        <p>结束时间</p>
                         <input type="date">
                     </div>
                 </li>
                 <li>
-                    <label for="">商户：</label>
                     <div class="input_con">
-                        <input type="text">
+                        <input type="text" placeholder="请输入商户">
                     </div>
                 </li>
                 <li>
-                    <label for="">代理：</label>
                     <div class="input_con">
-                        <input type="text">
+                        <input type="text" placeholder="请输入代理">
                     </div>
-                    
                 </li>
                 <li>
-                    <label for="">状态：</label>
+                  
                     <div class="input_con">
-                        <select name="" id="">
+                        <select name="" id="" placeholder="" >
+                            <option value="0">请选择状态</option>
                             <option value="1">全部</option>
-                            <option value="1">待支付</option>
-                            <option value="1">已支付</option>
-                            <option value="1">已退款</option>
-                            <option value="1">已关闭</option>
+                            <option value="2">待支付</option>
+                            <option value="3">已支付</option>
+                            <option value="4">已退款</option>
+                            <option value="5">已关闭</option>
                         </select>
                     </div>
                 </li>

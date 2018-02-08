@@ -7,7 +7,6 @@ html,body{
     display: none
 }
 .tab_panel > .table_item{
-    background: #fff;
     padding: 10px;
 }
 .tab .panel-active {
@@ -35,7 +34,7 @@ html,body{
     background: #46d264;
     color: #fff;
 }
-.list_info tr,.list_info th,list_info td{
+/* .list_info tr,.list_info th,list_info td{
     padding: 0;
     margin: 0;
 }
@@ -58,12 +57,44 @@ html,body{
     line-height: 18px;
     font-size: 12px;
     text-align: center;
+} */
+.list_info {
+    padding: 0 10px;
 }
-
+.list_info  li{
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 66px;
+    font-size: 13px;
+    position: relative;
+}
+.list_info .user_i{
+    position: relative;
+}
 .list_info img {
     height: 50px;
     width: 50px;
     margin: 0 auto;
     border-radius: 100%;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.list_info dt p{
+    font-size: 16px;
+}
+.list_info  dd {
+    height: 20px;;
 }
 
+.list_info  dd span i{
+    color: #f00;
+    font-style: normal;
+}
+
+.list_info  dd span:last-child{
+    margin-left: 15px;
+}

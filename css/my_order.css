@@ -49,10 +49,7 @@ body .sift_hidden{
     background: rgba(238, 238, 238,0.3);
 }
 .sift_content .input_con{
-    position: absolute;
-    left: 80px;
-    right: 0px;
-    top:  5px;
+  
 }
 .sift_content li .input_con > input ,.sift_content li .input_con > select{
     width: 85%;
