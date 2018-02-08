@@ -90,11 +90,14 @@ body .sift_hidden{
 
 .list_item{
     margin: 10px auto;
-    padding:10px;
-    background: #fff;
+    
 }
 .order_tips {
     line-height: 35px;
+    background: #fff;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-indent: 7px;
 }
 .order_tips span{
     margin-right: 20px;
@@ -104,36 +107,47 @@ body .sift_hidden{
     color: #f00;
     font-style:normal
 }
+ .order_list{
+     margin: 15px auto;
+ }
+.order_list ul{
+    padding: 0 10px;
+}
+.order_list li{
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
-.list_info tr,.list_info th,list_info td{
-    padding: 0;
-    margin: 0;
-}
-.list_info{
-    width: 100%;
-}
-.list_info th{
-    background-color: #eee;
-    border: 1px solid #eee;
-    padding: 8px 2px;
-    line-height: 18px;
-    text-align: center;
+.order_list dt{
+    border-bottom: 1px solid #ccc;
+    line-height: 30px;
+    font-size: 14px;
     color: #333;
-    font-size: 13px;
+    margin-bottom: 8px;
 }
-.list_info td {
-    background-color: #fff;
-    
-    border-bottom:1px dashed #ddd;
-    padding: 7px 2px;
-    line-height: 18px;
+.order_list dt span{ font-size: 16px;}
+.order_list dt i{
+    font-style: normal;
+    float: right;
     font-size: 12px;
-    text-align: center;
-    border-left: 0;
-    border-right: 0;
+    color: #78db78;
 }
-.list_info tr:nth-child(2n+1) td{
-    /* background: oldlace */
+.order_list dt  .order_cancel{
+    color: #ff8111
+}
+.order_list dt  .order_back{
+    color: #f00
+}
+.order_list dd{
+    font-size: 12px;
+    line-height: 22px;
+    color: #666;
+}
+.order_list .prices{
+    color: #ff8111;
+    font-size: 14px;
 }
 .page{
     margin:  10px auto;
