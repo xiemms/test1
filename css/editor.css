@@ -1,5 +1,5 @@
 .editor_header{
-    background:#d34201 url('../img/editor_bg.png') no-repeat top center;
+    background:#d34201 url('../img/editor_bg.jpeg') no-repeat top center;
     background-size: cover;
     height: 3.5rem;
     position: relative
@@ -39,9 +39,9 @@
     height: 30px;
     width: 100%;
     outline: 0;
-    border: 1px solid #eee;
-    background-color: #f6f6f6;
-    border-radius: 2px;   
+    border:0;
+    border-bottom: 1px solid #9e9e9e;
+    background-color: #fff;
     font-size: 14px;
     text-indent: .5em;
     color: #333;
@@ -51,7 +51,7 @@
 .content .sub{
     height: 40px;
     width: 50%;
-    background-color: #5fd0d4;
+    background-color: #FF5722;
     font-size: 17px;
     color: #fff;
     line-height: 40px;
