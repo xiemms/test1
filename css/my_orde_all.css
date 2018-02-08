@@ -11,7 +11,7 @@ html,body{
     border-radius: 10px;
 }
 .order_content .sift >h3{
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     padding-top: 10px;
 }
@@ -46,7 +46,8 @@ body .sift_hidden{
     line-height: 40px;
 }
 .sift_content .date_input{
-    flex: 1
+    flex: 1;
+    padding: 0px 20px;
 }
 .sift_content .date_input p{
     font-size: 12px; 
@@ -71,14 +72,17 @@ body .sift_hidden{
     outline: 0;
     border-bottom: 1px solid #ccc;
     font-size: 10px;
+    background: #fff;
+    color: #666;
+    border-radius: 0;
 
 }
 
 .sift_content .search_sift {
-    width: 200px;
+    width: 120px;
     display: block;
     margin: 20px auto 0;
-    background: #ff8111;
+    background: #FF5722;
     height: 40px;
     border-radius: 10px;
     border: 0;
@@ -192,7 +196,7 @@ body .sift_hidden{
     text-align: center;
 }
 .tab .nav .nav_item.nav-active {
-    background: #46d264;
+    background: #f44336;
     color: #fff;
 }
 

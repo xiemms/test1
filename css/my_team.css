@@ -31,7 +31,7 @@ html,body{
     text-align: center;
 }
 .tab .nav .nav_item.nav-active {
-    background: #46d264;
+    background: #F44336;
     color: #fff;
 }
 /* .list_info tr,.list_info th,list_info td{
@@ -87,11 +87,12 @@ html,body{
     font-size: 16px;
 }
 .list_info  dd {
-    height: 20px;;
+    height: 20px;
+    color: #999;
 }
 
 .list_info  dd span i{
-    color: #f00;
+    color: #f60;
     font-style: normal;
 }
 

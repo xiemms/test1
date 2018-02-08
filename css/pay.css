@@ -6,7 +6,7 @@ body a{
 }
 .content_c {
     width: 100%;
-    margin: 15px  auto;
+    margin: 0px  auto 15px auto;
 }
 
 
@@ -21,21 +21,28 @@ body a{
     text-align: center;
     /* border-radius: 10px; */
     font-size: 16px;
+    background: url("../img/editor_1.jpg") top center no-repeat;
+    background-size: 100% 100%;
+    color: #ffeb3b;
 }
 
 .pay_list{
-    padding: 10px 10px 0;
+    padding: 10px 10px 20px 10px;
     background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 20px 5px #ececec;
 }
 .pay_list h3{
-    font-size: 18px;
+    font-size: 16px;
     border-bottom: 1px solid #eee;
     padding: 4px 0;
+    color: #666;
 }
 .pay_list li{
     position: relative;
-    
+    border-bottom: 1px dashed #ccc;
     line-height: 45px;
+    padding: 10px 0;
 }
 .pay_list li a{text-decoration: none}
 .pay_list li p{
@@ -45,7 +52,7 @@ body a{
 }
 .pay_list li p span{
     display: block;
-    border-bottom: 1px solid #ddd;
+    /*border-bottom: 1px solid #ddd;*/
 }
 .pay_list li:last-child  p span{
     border-bottom: none;
@@ -60,7 +67,7 @@ body a{
     line-height: 28px;
     border-radius: 8px;
     color: #fff;
-    
+
 }
 .pay_list li .icon-31huabei{
     background: #00c700;
@@ -96,6 +103,7 @@ body a{
     position: relative;
     padding-left: 35px;
     font-weight: 200;
+    font-size: 14px;
 }
 .complaint i{
     position: absolute;
@@ -111,7 +119,8 @@ body a{
     margin: 15px auto;
     width: 100%;
     background: #fff;
-
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 5px #ececec;
 }
 .enter_price dl{
     padding: 0 10px 0 20px;
@@ -126,32 +135,35 @@ body a{
     border-bottom: 1px solid #eee;
 }
 .enter_price .price_item label{
-    font-size: 30px;
-    color: #f00;
+    font-size: 24px;
+    color: #ff5722;
 }
 .enter_price .price_item input{
     border: 0;
     margin-left: 4px;
-    outline: 0
+    outline: 0;
+    color: #ff5722;
+    font-size: 24px;
 }
 .enter_price .dest_item{
     font-size: 12px;
     line-height: 28px;
-    color: #aaa
+    color: #aaa;
+    padding: 10px 0;
 }
 
 .paylist2 {
     padding-top: 5px;
 }
 .paylist2 h3{
-    padding: 9px 0;
+    padding: 10px 0;
 }
 .pay_list .change_pay {
     font-size: 13px;
     font-weight: normal;
     float: right;
     margin-right: 5px;
-    background: #00c700;
+    background: #ff5722;
     color: #fff;
     padding: 4px 10px;
     border-radius: 6px;
@@ -161,7 +173,7 @@ body a{
     margin: 30px auto;
     display: block;
     width: 160px;
-    background: #00c700;
+    background:#ff5722;
     color: #fff;
     text-align: center;
     line-height: 40px;

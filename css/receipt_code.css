@@ -1,5 +1,5 @@
 .editor_header{
-    background:#d34201 url('../img/editor_bg.png') no-repeat top center;
+    background:#d34201 url('../img/editor_22.jpg') no-repeat top center;
     background-size: cover;
     height: 3.5rem;
     position: relative
@@ -10,20 +10,21 @@
     border: 1px solid #ccc;
     position: absolute;
     left: 50%;
-    top: 100%;
+    top: 75px;
     margin-top: -44px;
     margin-left: -44px;
 }
 .content{
-    margin: 60px auto;
+    margin: 20px auto;
 }
 .content img{
-    width: 80%;
+    width: 60%;
     display: block;
     margin: 0 auto;
 }
 .content p {
     margin: 5px auto;
     text-align: center;
-    
+    color: #f60;
+    font-size: 14px;
 }
